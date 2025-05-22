@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Hero Slider</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/reUse.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="amdaHospital1.js" defer></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> -->
+    <style>
+
+    </style>
+</head>
+
+<body class="">
+
+    <!-- hero section after slider  -->
+    <div class="firstHeroSecOfHsptl1 pb-6 sm:pb-8 lg:pb-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
+                <!-- logo - start -->
+                <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
+                    aria-label="logo">
+                    <svg width="95" height="94" viewBox="0 0 95 94" class="h-auto w-6 text-indigo-500"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+                    </svg>
+
+                    Amda Hospital
+                </a>
+                <!-- logo - end -->
+
+                <!-- nav - start -->
+                <nav class="hidden gap-12 lg:flex">
+                    <a href="#" class="text-lg font-semibold text-indigo-500">Home</a>
+                    <a href="#"
+                        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Features</a>
+                    <a href="#"
+                        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Know</a>
+                    <a href="#"
+                        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+                </nav>
+                <!-- nav - end -->
+
+                <!-- buttons - start -->
+                <a href="#"
+                    class="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Contact
+                    Sales</a>
+
+                <button type="button"
+                    class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    Menu
+                </button>
+                <!-- buttons - end -->
+            </header>
+
+            <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+                <!-- content - start -->
+                <div
+                    class="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+                    <h1 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">Revolutionary way to
+                        build the web</h1>
+
+                    <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">This is a section of some
+                        simple filler text, also known as placeholder text. It shares some characteristics of a real
+                        written text but is random.</p>
+
+                    <form class="flex w-full gap-2 md:max-w-md">
+                        <input placeholder="Email"
+                            class="w-full flex-1 rounded border bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+
+                        <button
+                            class="inline-block rounded bg-indigo-500 px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Sign
+                            up</button>
+                    </form>
+                </div>
+                <!-- content - end -->
+
+                <!-- image - start -->
+                <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+                    <img src="https://www.future-doctor.de/wp-content/uploads/2024/08/shutterstock_2480850611.jpg.webp"
+                        loading="lazy" alt="Photo by Fakurian Design"
+                        class="h-full w-full object-cover object-center" />
+                </div>
+                <!-- image - end -->
+            </section>
+        </div>
+    </div>
+    <!-- hero section after slider end -->
+
+    <!-- Scrollable Hero Section -->
+    <div class="hero-wrapper">
+        <div class="relative z-10 bg-white bg-opacity-90 text-gray-800 px-6 py-16">
+            <div class="max-w-6xl mx-auto space-y-16">
+                <section class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 animateText1">Lorem ipsum dolor sit.</h1>
+                    <p class="text-lg md:text-xl text-[darkgrey]">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quod hic aliquid perferendis odit sequi ad blanditiis ratione aliquam quos voluptatum!</p>
+                </section>
+                <section class="grid md:grid-cols-2 gap-10">
+                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px">
+                        <img src="images/query.png" alt="" class="w-[150px]">
+                        <div>
+
+                            <h2 class="text-2xl font-semibold mb-2">Feature One</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, adipisci!</p>
+                        </div>
+                    </div>
+                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px">
+                        <img src="images/doctor.png" alt="" class="w-[150px]">
+                        <div>
+
+                            <h2 class="text-2xl font-semibold mb-2">Feature Two</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum labore
+                                doloribus?
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="grid md:grid-cols-2 gap-10">
+                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px">
+                        <img src="images/bookdoctor.png" alt="" class="w-[150px]">
+                        <div>
+
+                            <h2 class="text-2xl font-semibold mb-2">Feature One</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, inventore adipisci.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px]">
+                        <img src="images/4th.png" alt="" class="w-[150px]">
+                        <div>
+                            <h2 class="text-2xl font-semibold mb-2">Feature Two</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cumque.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="text-center">
+                    <button
+                        class="px-6 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-white rounded-full font-semibold shadow-md hover:scale-105 transition">Get
+                        Started</button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Other section  -->
+    <section class="px-4 py-12 mx-auto hospital1Sec3">
+        <!-- Title -->
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-[#38aac9]">Specialities & Procedures</h2>
+            <div class="mt-2 w-24 h-1 bg-[#0391FF] mx-auto rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Left Column: Specialities -->
+            <div class="lg:col-span-7 space-y-6">
+                <!-- Tab label -->
+                <div class="inline-block bg-[#003D96] text-white px-4 py-2 rounded-t">
+                    Specialities
+                </div>
+
+                <!-- Grid of cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Card Item -->
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-stethoscope-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Anesthesia and Pain
+                            Management</span>
+                    </div>
+
+                    <!-- Repeat for each item -->
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Medical Oncology</span>
+                    </div>
+
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-heart-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Cardiology</span>
+                    </div>
+
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-heart-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Cardio Vascular and Thoracic
+                            Surgery</span>
+                    </div>
+
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Chiropractic</span>
+                    </div>
+
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-restaurant-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Dietetics and
+                            Nutrition</span>
+                    </div>
+
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Colorectal Surgery</span>
+                    </div>
+
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-heart-2-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Critical Care
+                            Medicine</span>
+                    </div>
+
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Comprehensive Breast Care
+                            Center</span>
+                    </div>
+
+                    <div
+                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <i
+                            class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Dentistry</span>
+                    </div>
+                </div>
+
+                <!-- View All Button -->
+                <div class="mt-6">
+                    <button
+                        class="flex items-center gap-2 text-[#003D96] border-2 border-[#0391FF] px-5 py-2 rounded-full hover:bg-[#0391FF] hover:text-white transition">
+                        <span>View All</span>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Call-to-Action -->
+            <div class="lg:col-span-5 relative">
+                <div
+                    class="bg-[#E8F0FF] p-6 rounded-3xl lg:rounded-[2.5rem] h-full flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white bg-[#0391FF] inline-block px-4 py-2 rounded mb-4">
+                            Looking for an Expert
+                        </h3>
+                        <p class="text-gray-700 mb-6">
+                            Our team of the most experienced doctors is here to help!
+                        </p>
+                        <button
+                            class="inline-flex items-center gap-2 bg-[#003D96] text-white px-5 py-3 rounded-full hover:bg-[#0391FF] transition">
+                            Find A Doctor<i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <!-- Replace with your actual illustration -->
+                        <img src="images/patients-removebg-preview.png" alt="Doctor Illustration"
+                            class="w-full object-cover rounded-lg shadow-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 4 -->
+    <div class="amdaHsptl1Sec4Slider swiper">
+        <div class="wrapper">
+            <h1 class="absolute top-0 left-1/2 -translate-x-1/2 text-4xl">Lorem, ipsum dolor.</h1>
+            <div class="card-list swiper-wrapper">
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="images/bookdoctor.png" alt="Design Trends" />
+                        <div class="card-tag">Design</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Modern UI Trends for 2025</h3>
+                        <p class="card-text">Explore the latest user interface design trends that are shaping the
+                            digital landscape this year. From neumorphism to glassmorphism and beyond.</p>
+                        <div class="card-footer">
+                            <div class="card-profile">
+                                <img src="images/user-1.jpg" alt="Alex Smith" />
+                                <div class="card-profile-info">
+                                    <span class="card-profile-name">Alex Smith</span>
+                                    <span class="card-profile-role">UI Designer</span>
+                                </div>
+                            </div>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="images/4th.png" alt="Development" />
+                        <div class="card-tag">Development</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Best Frontend Frameworks</h3>
+                        <p class="card-text">A comprehensive comparison of the most popular frontend frameworks and
+                            libraries that developers are using to build modern web applications.</p>
+                        <div class="card-footer">
+                            <div class="card-profile">
+                                <img src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/02/urbanbrush-20190213132151646171.png"
+                                    alt="Jessica Chen" />
+                                <div class="card-profile-info">
+                                    <span class="card-profile-name">Jessica Chen</span>
+                                    <span class="card-profile-role">Developer</span>
+                                </div>
+                            </div>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="images/about3.jpg" alt="AI" />
+                        <div class="card-tag">AI</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">AI User Experience Design</h3>
+                        <p class="card-text">How artificial intelligence is revolutionizing user experience design and
+                            enabling more personalized, intuitive interfaces for digital products.</p>
+                        <div class="card-footer">
+                            <div class="card-profile">
+                                <img src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/02/urbanbrush-20190213132151646171.png"
+                                    alt="Marcus Johnson" />
+                                <div class="card-profile-info">
+                                    <span class="card-profile-name">Marcus Johnson</span>
+                                    <span class="card-profile-role">UX Researcher</span>
+                                </div>
+                            </div>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="images/query.png" alt="Productivity" />
+                        <div class="card-tag">Productivity</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Workspace Design for Focus</h3>
+                        <p class="card-text">Designing workspaces that maximize productivity and minimize distractions
+                            for creative professionals in the hybrid work environment.</p>
+                        <div class="card-footer">
+                            <div class="card-profile">
+                                <img src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/02/urbanbrush-20190213132151646171.png"
+                                    alt="Sarah Miller" />
+                                <div class="card-profile-info">
+                                    <span class="card-profile-name">Sarah Miller</span>
+                                    <span class="card-profile-role">Interior Designer</span>
+                                </div>
+                            </div>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="images/patients-removebg-preview.png" alt="Animation" />
+                        <div class="card-tag">Animation</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Micro Animation Designs</h3>
+                        <p class="card-text">The small animations and interactions that make a big difference in user
+                            experience and how to implement them effectively in your designs.</p>
+                        <div class="card-footer">
+                            <div class="card-profile">
+                                <img src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/02/urbanbrush-20190213132151646171.png"
+                                    alt="David Park" />
+                                <div class="card-profile-info">
+                                    <span class="card-profile-name">David Park</span>
+                                    <span class="card-profile-role">Motion Designer</span>
+                                </div>
+                            </div>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+    </div>
+    <!-- section 4end  -->
+
+    <!-- section 5 | patient story  -->
+    <section class="amdaHospital1section">
+        <h2>Real Patients, Real Stories</h2>
+        <div class="amdaHospital1slider-wrapper overflow-hidden">
+            <div class="amdaHospital1swiper-container">
+                <div class="amdaHospital1swiper-wrapper" id="sliderWrapper">
+                    <!-- Slides -->
+                </div>
+                <div class="amdaHospital1swiper-button-prev" id="prevBtn">&#10094;</div>
+                <div class="amdaHospital1swiper-button-next" id="nextBtn">&#10095;</div>
+            </div>
+
+            <div class="amdaHospital1content-list" id="contentList">
+                <!-- Content items -->
+            </div>
+        </div>
+    </section>
+    <!-- section 5 | patient story  -->
+
+    <!-- SECTION 6  -->
+
+    <div class="bg-[#e4f7f761] py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+            <!-- text - start -->
+            <div class="mb-10 md:mb-16">
+                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"><i
+                        class="ri-article-fill"></i>Our Latest News</h2>
+
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple
+                    filler text, also known as placeholder text. It shares some characteristics of a real written text
+                    but is random or otherwise generated.</p>
+            </div>
+            <!-- text - end -->
+
+            <div class="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
+                <!-- article - start -->
+                <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6 border border-[#ebffff] px-1 py-2">
+                    <a href="#"
+                        class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+                        <img src="images/4th.png" loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                    </a>
+
+                    <div class="flex flex-col gap-2">
+                        <span class="text-sm text-gray-400">July 19, 2021</span>
+
+                        <h2 class="text-xl font-bold text-gray-800">
+                            <a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">New
+                                trends in Tech</a>
+                        </h2>
+
+                        <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder
+                            text.</p>
+
+                        <div>
+                            <a href="#"
+                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- article - end -->
+
+                <!-- article - start -->
+                <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6 border border-[#ebffff] px-1 py-2">
+                    <a href="#"
+                        class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+                        <img src="images/bookdoctor.png" loading="lazy" alt="Photo by Lorenzo Herrera"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                    </a>
+
+                    <div class="flex flex-col gap-2">
+                        <span class="text-sm text-gray-400">April 07, 2021</span>
+
+                        <h2 class="text-xl font-bold text-gray-800">
+                            <a href="#"
+                                class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">Working
+                                with legacy stacks</a>
+                        </h2>
+
+                        <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder
+                            text.</p>
+
+                        <div>
+                            <a href="#"
+                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- article - end -->
+
+                <!-- article - start -->
+                <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6 border border-[#ebffff] px-1 py-2">
+                    <a href="#"
+                        class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+                        <img src="images/about3.jpg" loading="lazy" alt="Photo by Magicle"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                    </a>
+
+                    <div class="flex flex-col gap-2">
+                        <span class="text-sm text-gray-400">March 15, 2021</span>
+
+                        <h2 class="text-xl font-bold text-gray-800">
+                            <a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">10
+                                best smartphones for devs</a>
+                        </h2>
+
+                        <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder
+                            text.</p>
+
+                        <div>
+                            <a href="#"
+                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- article - end -->
+
+                <!-- article - start -->
+                <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6 border border-[#ebffff] px-1 py-2">
+                    <a href="#"
+                        class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+                        <img src="images/ladyDOctor.png" loading="lazy" alt="Photo by Martin Sanchez"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                    </a>
+
+                    <div class="flex flex-col gap-2">
+                        <span class="text-sm text-gray-400">January 27, 2021</span>
+
+                        <h2 class="text-xl font-bold text-gray-800">
+                            <a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">8
+                                High performance Notebooks</a>
+                        </h2>
+
+                        <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder
+                            text.</p>
+
+                        <div>
+                            <a href="#"
+                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- article - end -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 6 END  -->
+    <!-- section 7  -->
+
+    <!-- second -->
+    <div class="">
+        <input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
+        <!-- content #2 -->
+        <div
+            class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+            <img class="rounded-t-lg w-96 h-64"
+                src="https://images.unsplash.com/photo-1628191139360-4083564d03fd?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=384&q=80"
+                alt="" />
+            <div class="py-4 px-8">
+                <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+                    Scelerisque eleifend donec pretium vulputate sapien.
+                </h1>
+                <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Egestas diam in arcu cursus euismod
+                    quis. Fusce id velit ut tortor. Congue quisque egestas diam in arcu cursus euismod quis.
+                </p>
+            </div>
+            <!-- controls -->
+            <div class="absolute top-1/2 w-full flex justify-between z-20">
+                <label for="carousel-1"
+                    class="inline-block text-blue-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </label>
+                <label for="carousel-3"
+                    class="inline-block text-blue-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- three -->
+    <div class="">
+        <input class="sr-only peer" type="radio" name="carousel" id="carousel-3" />
+        <!-- content #3 -->
+        <div
+            class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+            <img class="rounded-t-lg w-96 h-64"
+                src="https://images.unsplash.com/photo-1628718120482-07e03fe361dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=384&q=80"
+                alt="" />
+            <div class="py-4 px-8">
+                <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+                    Consectetur purus ut faucibus pulvinar elementum.
+                </h1>
+                <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Aliquam ultrices sagittis orci a
+                    scelerisque purus semper. Quisque id diam vel quam elementum pulvinar. Facilisis magna etiam
+                    tempor orci eu lobortis elementum.
+                </p>
+            </div>
+            <!-- controls -->
+            <div class="absolute top-1/2 w-full flex justify-between z-20">
+                <label for="carousel-2"
+                    class="inline-block text-yellow-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </label>
+                <label for="carousel-1"
+                    class="inline-block text-yellow-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- section 7 end -->
+    <!-- slider 2  -->
+    <div class="parentOfSecSLiderAmdaHs1 bg-[#acdbff]">
+        <div class="djk-slider-container">
+            <button class="djk-slider-btn djk-prev">❮</button>
+            <div class="djk-slider">
+                <div class="djk-slide">
+                    <h2>OBESITY PACKAGE - BMD</h2>
+                    <p>The Obesity Health Package with Bone Mineral Density (BMD) assessment is a comprehensive suite of
+                        tests designed to evaluate and manage obesity-related health.</p>
+                    <span class="djk-price">NPR 27,566.00</span>
+                    <span class="djk-discounted-price">NPR 20,600.00</span>
+                </div>
+                <div class="djk-slide">
+                    <h2>COMPREHENSIVE HEALTH PACKAGE</h2>
+                    <p>Comprehensive Health Package helps in the overall assessment of all the organs in the body such
+                        as
+                        heart, kidney, lungs etc. for your well-being.</p>
+                    <span class="djk-price">NPR 18,106.00</span>
+                    <span class="djk-discounted-price">NPR 13,600.00</span>
+                </div>
+                <div class="djk-slide">
+                    <h2>STANDARD CARDIAC CHECKUP PACKAGE</h2>
+                    <p>The Standard Cardiac Checkup Package offers a thorough evaluation of cardiovascular health and
+                        related systems. This package includes essential blood tests.</p>
+                    <span class="djk-price">NPR 11,660.00</span>
+                    <span class="djk-discounted-price">NPR 8,700.00</span>
+                </div>
+                <!-- Duplicate slides for infinite loop effect -->
+                <div class="djk-slide">
+                    <h2>OBESITY PACKAGE - BMD</h2>
+                    <p>The Obesity Health Package with Bone Mineral Density (BMD) assessment is a comprehensive suite of
+                        tests designed to evaluate and manage obesity-related health.</p>
+                    <span class="djk-price">NPR 27,566.00</span>
+                    <span class="djk-discounted-price">NPR 20,600.00</span>
+                </div>
+                <div class="djk-slide">
+                    <h2>COMPREHENSIVE HEALTH PACKAGE</h2>
+                    <p>Comprehensive Health Package helps in the overall assessment of all the organs in the body such
+                        as
+                        heart, kidney, lungs etc. for your well-being.</p>
+                    <span class="djk-price">NPR 18,106.00</span>
+                    <span class="djk-discounted-price">NPR 13,600.00</span>
+                </div>
+            </div>
+            <button class="djk-slider-btn djk-next">❯</button>
+        </div>
+    </div>
+    <!-- slider 2 end -->
+    <!-- section 8-->
+    <!-- why to choose us  -->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <!-- text - start -->
+            <div class="mb-10 md:mb-16">
+                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Why Choose AMDA
+                    Hospital over other </h2>
+
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quis unde iure earum similique dicta officia quas cumque nostrum ab
+                    nihil?</p>
+            </div>
+            <!-- text - end -->
+
+            <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
+                <!-- feature - start -->
+                <div class="flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Growth</h3>
+                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                            similar to real text.</p>
+                        <a href="#"
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Security</h3>
+                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                            similar to real text.</p>
+                        <a href="#"
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Cloud</h3>
+                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                            similar to real text.</p>
+                        <a href="#"
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Speed</h3>
+                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                            similar to real text.</p>
+                        <a href="#"
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Support</h3>
+                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                            similar to real text.</p>
+                        <a href="#"
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Dark Mode</h3>
+                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                            similar to real text.</p>
+                        <a href="#"
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                    </div>
+                </div>
+                <!-- feature - end -->
+            </div>
+        </div>
+    </div>
+    <!-- section 8edn -->
+
+    <!-- FAQ  -->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <!-- text - start -->
+            <div class="mb-10 md:mb-16">
+                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl faq-question">
+                    Frequently asked
+                    questions</h2>
+
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple
+                    filler text, also known as placeholder text. It shares some characteristics of a real written text
+                    but is random or otherwise generated.</p>
+            </div>
+            <!-- text - end -->
+
+            <div class="mx-auto flex max-w-screen-sm flex-col border-t">
+                <!-- question - start -->
+                <div class="border-b">
+                    <div
+                        class="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-indigo-500 active:text-indigo-600">
+                        <span class="font-semibold transition duration-100 md:text-lg">How does the product work?</span>
+
+                        <span class="text-indigo-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <p class="mb-4 hidden text-gray-500">This is a section of some simple filler text, also known as
+                        placeholder text. It shares some characteristics of a real written text but is random or
+                        otherwise generated. It may be used to display a sample of fonts or generate text for testing.
+                    </p>
+                </div>
+                <!-- question - end -->
+
+                <!-- question - start -->
+                <div class="border-b">
+                    <div
+                        class="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-indigo-500 active:text-indigo-600">
+                        <span class="font-semibold transition duration-100 md:text-lg">What are the features?</span>
+
+                        <span class="text-indigo-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <p class="mb-4 hidden text-gray-500">This is a section of some simple filler text, also known as
+                        placeholder text. It shares some characteristics of a real written text but is random or
+                        otherwise generated. It may be used to display a sample of fonts or generate text for testing.
+                    </p>
+                </div>
+                <!-- question - end -->
+
+                <!-- question - start -->
+                <div class="border-b">
+                    <div
+                        class="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-indigo-500 active:text-indigo-600">
+                        <span class="font-semibold transition duration-100 md:text-lg">What about integrations?</span>
+
+                        <span class="text-indigo-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <p class="mb-4 hidden text-gray-500">This is a section of some simple filler text, also known as
+                        placeholder text. It shares some characteristics of a real written text but is random or
+                        otherwise generated. It may be used to display a sample of fonts or generate text for testing.
+                    </p>
+                </div>
+                <!-- question - end -->
+
+                <!-- question - start -->
+                <div class="border-b">
+                    <div
+                        class="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-indigo-500 active:text-indigo-600">
+                        <span class="font-semibold transition duration-100 md:text-lg">Is support available?</span>
+
+                        <span class="rotate-180 text-indigo-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <p class="mb-4 text-gray-500">This is a section of some simple filler text, also known as
+                        placeholder text. It shares some characteristics of a real written text but is random or
+                        otherwise generated. It may be used to display a sample of fonts or generate text for testing.
+                    </p>
+                </div>
+                <!-- question - end -->
+            </div>
+        </div>
+    </div>
+    <!-- FAQ END -->
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+
+    });
+
+
+
+</script>
+
+</html>

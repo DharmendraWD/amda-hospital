@@ -1,0 +1,71 @@
+:root {
+    /* COLOR  */
+    --AMDAprimary-color: #003D96;
+    --AMDAsecondary-color: #0391FF;
+    --b2: #0375b1;
+    --greyiesWhite: #e5e5e5db;
+    --lightBlue: #c4dbff;
+    --offwhit22: #d5d4d4;
+    --white: white;
+    --linkColor: black;
+    --footerBg22: black;
+    --lightBlue2: #b3bfd1;
+    /* FONT SIZE  */
+    --fontSizeForFormTitle: 26px;
+    --fontSizeForFormLabel: 18px;
+    --fontSizeForFormOptions: 16px;
+    --fontSizeSmall: 12px;
+
+}
+
+
+
+.min200dyWidthh {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)) !important;
+    place-items: center;
+    gap: 12px;
+}
+
+.noUserSelect {
+    user-select: none;
+}
+
+.ovrflowHidden {
+    overflow: hidden !important;
+}
+
+
+
+/* THIN SCROLLER  */
+/* Works in Chrome, Safari, Edge (WebKit) */
+.scroll-thin::-webkit-scrollbar {
+    width: 6px;
+    /* vertical scrollbar */
+    height: 6px;
+    /* horizontal scrollbar */
+}
+
+.scroll-thin::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.4);
+    /* subtle color */
+    border-radius: 10px;
+}
+
+/* Works in Firefox */
+.scroll-thin {
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: rgba(100, 100, 100, 0.4) transparent;
+}
+
+/* iOS smooth scrolling */
+.scroll-thin {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* THIN SCROLLER end */
