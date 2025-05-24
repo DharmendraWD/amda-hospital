@@ -127,66 +127,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // slider 2
+// excelence in 
+const sliderxy22 = document.getElementById('amdahsptl-fofo-slider');
+const nxtbtnasja = document.querySelector('.amdahsptl-fofo-next');
+const prvbtnskdj = document.querySelector('.amdahsptl-fofo-prev');
+let crntIndxAmdHs = 0;
 
-document.addEventListener('DOMContentLoaded', function () {
-    const djkSlider = document.querySelector('.djk-slider');
-    const djkPrevBtn = document.querySelector('.djk-prev');
-    const djkNextBtn = document.querySelector('.djk-next');
-    const djkSlides = document.querySelectorAll('.djk-slide');
-    const djkSlideWidth = djkSlides[0].offsetWidth + 20; // Including gap
+function updateSlider() {
+    const slideWidth = sliderxy22.querySelector('.amdahsptl-fofo-slide').clientWidth;
+    sliderxy22.style.transform = `translateX(-${crntIndxAmdHs * slideWidth}px)`;
+}
 
-    let currentPosition = 0;
-    const visibleSlides = Math.min(3, Math.floor(djkSlider.offsetWidth / djkSlideWidth));
-
-    // Adjust for mobile view
-    if (window.innerWidth < 768) {
-        djkSlider.scrollLeft = 0;
+nxtbtnasja.addEventListener('click', () => {
+    const slides = sliderxy22.children.length;
+    if (crntIndxAmdHs < slides - 1) {
+        crntIndxAmdHs++;
+        updateSlider();
     }
-
-    djkNextBtn.addEventListener('click', function () {
-        currentPosition += djkSlideWidth * visibleSlides;
-        if (currentPosition > djkSlideWidth * (djkSlides.length - visibleSlides)) {
-            // If we've scrolled to the duplicates, instantly reset to the beginning
-            currentPosition = 0;
-            djkSlider.scrollTo({
-                left: currentPosition,
-                behavior: 'instant'
-            });
-        }
-        djkSlider.scrollTo({
-            left: currentPosition,
-            behavior: 'smooth'
-        });
-    });
-
-    djkPrevBtn.addEventListener('click', function () {
-        currentPosition -= djkSlideWidth * visibleSlides;
-        if (currentPosition < 0) {
-            // If we're at the beginning, jump to the duplicates at the end
-            currentPosition = djkSlideWidth * (djkSlides.length - visibleSlides);
-            djkSlider.scrollTo({
-                left: currentPosition,
-                behavior: 'instant'
-            });
-        }
-        djkSlider.scrollTo({
-            left: currentPosition,
-            behavior: 'smooth'
-        });
-    });
-
-    // Auto-scroll for demonstration (optional)
-    // setInterval(() => {
-    //     djkNextBtn.click();
-    // }, 3000);
-
-    // Handle window resize
-    window.addEventListener('resize', function () {
-        const newVisibleSlides = Math.min(3, Math.floor(djkSlider.offsetWidth / djkSlideWidth));
-        if (newVisibleSlides !== visibleSlides) {
-            currentPosition = 0;
-            djkSlider.scrollLeft = 0;
-        }
-    });
 });
+
+prvbtnskdj.addEventListener('click', () => {
+    if (crntIndxAmdHs > 0) {
+        crntIndxAmdHs--;
+        updateSlider();
+    }
+});
+
+window.addEventListener('resize', updateSlider);
+window.addEventListener('load', updateSlider);
 //  sloder 2

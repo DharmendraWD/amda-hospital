@@ -11,147 +11,136 @@
 
     <link rel="stylesheet" href="css/reUse.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minimal.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="amdaHospital1.js" defer></script>
+    <script src="minimal.js" defer></script>
     <!-- <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
     <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <style>
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
 
+        body {
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
     </style>
 </head>
 
 <body class="">
 
-    <!-- hero section after slider  -->
-    <div class="firstHeroSecOfHsptl1 pb-6 sm:pb-8 lg:pb-12">
+    <!-- hero section1   -->
+    <div class="firstHeroSecOfHsptl1 pb-6 sm:pb-8 lg:pb-12 mt-[20px]">
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-            <header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
-                <!-- logo - start -->
-                <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
-                    aria-label="logo">
-                    <svg width="95" height="94" viewBox="0 0 95 94" class="h-auto w-6 text-indigo-500"
-                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-                    </svg>
 
-                    Amda Hospital
-                </a>
-                <!-- logo - end -->
 
-                <!-- nav - start -->
-                <nav class="hidden gap-12 lg:flex">
-                    <a href="#" class="text-lg font-semibold text-indigo-500">Home</a>
-                    <a href="#"
-                        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Features</a>
-                    <a href="#"
-                        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Know</a>
-                    <a href="#"
-                        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
-                </nav>
-                <!-- nav - end -->
-
-                <!-- buttons - start -->
-                <a href="#"
-                    class="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Contact
-                    Sales</a>
-
-                <button type="button"
-                    class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd" />
-                    </svg>
-
-                    Menu
-                </button>
-                <!-- buttons - end -->
-            </header>
-
-            <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+            <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row pt-[20px]">
                 <!-- content - start -->
                 <div
                     class="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
-                    <h1 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">Revolutionary way to
+                    <h1 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl animate-on-scroll"
+                        data-animate="text-focus-in">
+                        Revolutionary way to
                         build the web</h1>
 
-                    <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">This is a section of some
+                    <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 text-[1.7rem]">This is a section of
+                        some
                         simple filler text, also known as placeholder text. It shares some characteristics of a real
                         written text but is random.</p>
 
                     <form class="flex w-full gap-2 md:max-w-md">
                         <input placeholder="Email"
-                            class="w-full flex-1 rounded border bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+                            class="w-full flex-1 rounded border bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 outline-none ring-indigo-300 transition duration-100 focus:ring text-[1.5rem]" />
 
                         <button
-                            class="inline-block rounded bg-indigo-500 px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Sign
+                            class="inline-block rounded bg-indigo-500 px-8 py-2 text-center text-[1.5rem] font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700">Sign
                             up</button>
                     </form>
                 </div>
                 <!-- content - end -->
 
                 <!-- image - start -->
-                <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
-                    <img src="https://www.future-doctor.de/wp-content/uploads/2024/08/shutterstock_2480850611.jpg.webp"
-                        loading="lazy" alt="Photo by Fakurian Design"
-                        class="h-full w-full object-cover object-center" />
+                <div class="h-[350px] lg:h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+                    <img src="images/amdaDoctor.png" loading="lazy" alt="Photo by Fakurian Design"
+                        class="h-full w-full object-cover object-center animate-on-scroll"
+                        data-animate="amdaHsptlHero1img" />
                 </div>
                 <!-- image - end -->
             </section>
         </div>
     </div>
-    <!-- hero section after slider end -->
+    <!-- hero section1 after  end -->
 
     <!-- Scrollable Hero Section -->
     <div class="hero-wrapper">
         <div class="relative z-10 bg-white bg-opacity-90 text-gray-800 px-6 py-16">
-            <div class="max-w-6xl mx-auto space-y-16">
+            <div class="mx-auto space-y-16">
                 <section class="text-center">
                     <h1 class="text-4xl md:text-6xl font-bold mb-4 animateText1">Lorem ipsum dolor sit.</h1>
-                    <p class="text-lg md:text-xl text-[darkgrey]">Lorem ipsum dolor sit amet consectetur, adipisicing
+                    <p class="text-[1.6rem] text-[darkgrey]">Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Quod hic aliquid perferendis odit sequi ad blanditiis ratione aliquam quos voluptatum!</p>
                 </section>
                 <section class="grid md:grid-cols-2 gap-10">
-                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px">
+                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex flex-col  items-center gap-[15px] lg:flex-row animate-on-scroll"
+                        data-animate="scale-in-center">
                         <img src="images/query.png" alt="" class="w-[150px]">
                         <div>
 
-                            <h2 class="text-2xl font-semibold mb-2">Feature One</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, adipisci!</p>
+                            <h2 class="text-[2rem] font-semibold mb-2">Feature One</h2>
+                            <p class="text-[1.6rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+                                adipisci!</p>
                         </div>
                     </div>
-                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px">
+                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px] flex-col lg:flex-row animate-on-scroll"
+                        data-animate="scale-in-center">
                         <img src="images/doctor.png" alt="" class="w-[150px]">
                         <div>
 
-                            <h2 class="text-2xl font-semibold mb-2">Feature Two</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum labore
+                            <h2 class="text-[2rem] font-semibold mb-2">Feature Two</h2>
+                            <p class="text-[1.6rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                                illum labore
                                 doloribus?
                             </p>
                         </div>
                     </div>
                 </section>
                 <section class="grid md:grid-cols-2 gap-10">
-                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px">
+                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px] flex-col lg:flex-row animate-on-scroll"
+                        data-animate="scale-in-center">
                         <img src="images/bookdoctor.png" alt="" class="w-[150px]">
                         <div>
 
-                            <h2 class="text-2xl font-semibold mb-2">Feature One</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, inventore adipisci.
+                            <h2 class="text-[2rem] font-semibold mb-2">Feature One</h2>
+                            <p class="text-[1.6rem]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+                                inventore adipisci.
                             </p>
                         </div>
                     </div>
-                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px]">
+                    <div class="p-6 text-[royalblue] rounded-2xl shadow-lg flex items-center gap-[15px] flex-col lg:flex-row animate-on-scroll"
+                        data-animate="scale-in-center">
                         <img src="images/4th.png" alt="" class="w-[150px]">
                         <div>
-                            <h2 class="text-2xl font-semibold mb-2">Feature Two</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cumque.</p>
+                            <h2 class="text-[2rem] font-semibold mb-2">Feature Two</h2>
+                            <p class="text-[1.6rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                                cumque.</p>
                         </div>
                     </div>
                 </section>
                 <section class="text-center">
                     <button
-                        class="px-6 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-white rounded-full font-semibold shadow-md hover:scale-105 transition">Get
+                        class="px-6 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-white rounded-full font-semibold shadow-md hover:scale-105 transition text-[1.6rem]">Get
                         Started</button>
                 </section>
             </div>
@@ -163,7 +152,7 @@
     <section class="px-4 py-12 mx-auto hospital1Sec3">
         <!-- Title -->
         <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-[#38aac9]">Specialities & Procedures</h2>
+            <h2 class="text-[3rem] font-bold text-[#38aac9]">Specialities & Procedures</h2>
             <div class="mt-2 w-24 h-1 bg-[#0391FF] mx-auto rounded"></div>
         </div>
 
@@ -171,95 +160,103 @@
             <!-- Left Column: Specialities -->
             <div class="lg:col-span-7 space-y-6">
                 <!-- Tab label -->
-                <div class="inline-block bg-[#003D96] text-white px-4 py-2 rounded-t">
+                <div class="inline-block bg-[#003D96] text-white px-4 py-2 rounded-t text-[2rem]">
                     Specialities
                 </div>
 
                 <!-- Grid of cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <!-- Card Item -->
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-stethoscope-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Anesthesia and Pain
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Anesthesia and
+                            Pain
                             Management</span>
                     </div>
 
                     <!-- Repeat for each item -->
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Medical Oncology</span>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Medical
+                            Oncology</span>
                     </div>
 
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-heart-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Cardiology</span>
+                        <span
+                            class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Cardiology</span>
                     </div>
 
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-heart-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Cardio Vascular and Thoracic
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Cardio
+                            Vascular and Thoracic
                             Surgery</span>
                     </div>
 
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Chiropractic</span>
+                        <span
+                            class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Chiropractic</span>
                     </div>
 
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-restaurant-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Dietetics and
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Dietetics and
                             Nutrition</span>
                     </div>
 
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Colorectal Surgery</span>
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Colorectal
+                            Surgery</span>
                     </div>
 
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-heart-2-line text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Critical Care
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Critical Care
                             Medicine</span>
                     </div>
 
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Comprehensive Breast Care
+                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Comprehensive
+                            Breast Care
                             Center</span>
                     </div>
 
-                    <div
-                        class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div class="group flex items-center p-4 bg-white rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer animate-on-scroll"
+                        data-animate="scale-in-left">
                         <i
                             class="ri-heart-line  text-[#0391FF] text-2xl mr-4 group-hover:text-[#003D96] transition-colors duration-300"></i>
-                        <span class="text-[#003D96] group-hover:text-[#0391FF] font-medium">Dentistry</span>
+                        <span
+                            class="text-[#003D96] group-hover:text-[#0391FF] font-medium text-[1.6rem]">Dentistry</span>
                     </div>
                 </div>
 
                 <!-- View All Button -->
                 <div class="mt-6">
-                    <button
-                        class="flex items-center gap-2 text-[#003D96] border-2 border-[#0391FF] px-5 py-2 rounded-full hover:bg-[#0391FF] hover:text-white transition">
-                        <span>View All</span>
+                    <button class="flex items-center gap-2 text-[#003D96] border-2 border-[#0391FF] px-5 py-2 rounded-full hover:bg-[#0391FF] hover:text-white transition
+                       ">
+                        <span class="text-[1.6rem]">View All</span>
                         <i class="ri-arrow-right-s-line"></i>
                     </button>
                 </div>
@@ -270,21 +267,22 @@
                 <div
                     class="bg-[#E8F0FF] p-6 rounded-3xl lg:rounded-[2.5rem] h-full flex flex-col justify-between overflow-hidden">
                     <div>
-                        <h3 class="text-2xl font-bold text-white bg-[#0391FF] inline-block px-4 py-2 rounded mb-4">
+                        <h3 class="text-[2rem] font-bold text-white bg-[#0391FF] inline-block px-4 py-2 rounded mb-4">
                             Looking for an Expert
                         </h3>
-                        <p class="text-gray-700 mb-6">
+                        <p class="text-gray-700 mb-6 text-[1.5rem]">
                             Our team of the most experienced doctors is here to help!
                         </p>
                         <button
-                            class="inline-flex items-center gap-2 bg-[#003D96] text-white px-5 py-3 rounded-full hover:bg-[#0391FF] transition">
+                            class="inline-flex items-center gap-2 bg-[#003D96] text-[1.6rem] text-white px-5 py-3 rounded-full hover:bg-[#0391FF] transition">
                             Find A Doctor<i class="ri-arrow-right-line"></i>
                         </button>
                     </div>
-                    <div class="mt-4">
+                    <div class="mt-4 overflow-hidden">
                         <!-- Replace with your actual illustration -->
-                        <img src="images/patients-removebg-preview.png" alt="Doctor Illustration"
-                            class="w-full object-cover rounded-lg shadow-lg" />
+                        <img src="images/amdaDoctor.png" alt="Doctor Illustration"
+                            class="w-full object-cover rounded-lg shadow-lg animate-on-scroll"
+                            data-animate="amdaHsptlHero1img" />
                     </div>
                 </div>
             </div>
@@ -295,7 +293,8 @@
     <!-- section 4 -->
     <div class="amdaHsptl1Sec4Slider swiper">
         <div class="wrapper">
-            <h1 class="absolute top-0 left-1/2 -translate-x-1/2 text-4xl">Lorem, ipsum dolor.</h1>
+            <h1 class="absolute top-0 left-1/2 mt-[12px] -translate-x-1/2 text-[1.7rem] lg:text-[2rem]">Lorem, ipsum
+                dolor.</h1>
             <div class="card-list swiper-wrapper">
                 <!-- Single Card -->
                 <div class="card swiper-slide">
@@ -303,8 +302,8 @@
                         <img src="images/bookdoctor.png" alt="Design Trends" />
                         <div class="card-tag">Design</div>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Modern UI Trends for 2025</h3>
+                    <div class="card-contnt-AmdaHospital">
+                        <h3 class="card-titleAmdaHospital">Modern UI Trends for 2025</h3>
                         <p class="card-text">Explore the latest user interface design trends that are shaping the
                             digital landscape this year. From neumorphism to glassmorphism and beyond.</p>
                         <div class="card-footer">
@@ -325,8 +324,8 @@
                         <img src="images/4th.png" alt="Development" />
                         <div class="card-tag">Development</div>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Best Frontend Frameworks</h3>
+                    <div class="card-contnt-AmdaHospital">
+                        <h3 class="card-titleAmdaHospital">Best Frontend Frameworks</h3>
                         <p class="card-text">A comprehensive comparison of the most popular frontend frameworks and
                             libraries that developers are using to build modern web applications.</p>
                         <div class="card-footer">
@@ -348,8 +347,8 @@
                         <img src="images/about3.jpg" alt="AI" />
                         <div class="card-tag">AI</div>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">AI User Experience Design</h3>
+                    <div class="card-contnt-AmdaHospital">
+                        <h3 class="card-titleAmdaHospital">AI User Experience Design</h3>
                         <p class="card-text">How artificial intelligence is revolutionizing user experience design and
                             enabling more personalized, intuitive interfaces for digital products.</p>
                         <div class="card-footer">
@@ -371,8 +370,8 @@
                         <img src="images/query.png" alt="Productivity" />
                         <div class="card-tag">Productivity</div>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Workspace Design for Focus</h3>
+                    <div class="card-contnt-AmdaHospital">
+                        <h3 class="card-titleAmdaHospital">Workspace Design for Focus</h3>
                         <p class="card-text">Designing workspaces that maximize productivity and minimize distractions
                             for creative professionals in the hybrid work environment.</p>
                         <div class="card-footer">
@@ -394,8 +393,8 @@
                         <img src="images/patients-removebg-preview.png" alt="Animation" />
                         <div class="card-tag">Animation</div>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Micro Animation Designs</h3>
+                    <div class="card-contnt-AmdaHospital">
+                        <h3 class="card-titleAmdaHospital">Micro Animation Designs</h3>
                         <p class="card-text">The small animations and interactions that make a big difference in user
                             experience and how to implement them effectively in your designs.</p>
                         <div class="card-footer">
@@ -443,13 +442,14 @@
     <!-- SECTION 6  -->
 
     <div class="bg-[#e4f7f761] py-6 sm:py-8 lg:py-12">
-        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+        <div class=" mx-auto max-w-screen-xl px-4 md:px-8">
             <!-- text - start -->
             <div class="mb-10 md:mb-16">
-                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"><i
-                        class="ri-article-fill"></i>Our Latest News</h2>
+                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-[2.5rem] animate-on-scroll"
+                    data-animate="text-pop-up-top"><i class="ri-article-fill"></i>Our Latest News</h2>
 
-                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 text-[1.7rem]">This is a section of some
+                    simple
                     filler text, also known as placeholder text. It shares some characteristics of a real written text
                     but is random or otherwise generated.</p>
             </div>
@@ -465,19 +465,21 @@
                     </a>
 
                     <div class="flex flex-col gap-2">
-                        <span class="text-sm text-gray-400">July 19, 2021</span>
+                        <span class=" text-gray-400 text-[1.2rem]">July 19, 2021</span>
 
                         <h2 class="text-xl font-bold text-gray-800">
-                            <a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">New
+                            <a href="#"
+                                class="transition duration-100 hover:text-indigo-500 active:text-indigo-600 text-[1.6rem]">New
                                 trends in Tech</a>
                         </h2>
 
-                        <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder
+                        <p class="text-gray-500 text-[1.5rem]">This is a section of some simple filler text, also known
+                            as placeholder
                             text.</p>
 
                         <div>
                             <a href="#"
-                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Read
+                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.5rem]">Read
                                 more</a>
                         </div>
                     </div>
@@ -493,20 +495,21 @@
                     </a>
 
                     <div class="flex flex-col gap-2">
-                        <span class="text-sm text-gray-400">April 07, 2021</span>
+                        <span class=" text-gray-400 text-[1.2rem]">April 07, 2021</span>
 
                         <h2 class="text-xl font-bold text-gray-800">
                             <a href="#"
-                                class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">Working
+                                class="transition duration-100 hover:text-indigo-500 active:text-indigo-600 text-[1.6rem]">Working
                                 with legacy stacks</a>
                         </h2>
 
-                        <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder
+                        <p class="text-gray-500 text-[1.5rem]">This is a section of some simple filler text, also known
+                            as placeholder
                             text.</p>
 
                         <div>
                             <a href="#"
-                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Read
+                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.5rem]">Read
                                 more</a>
                         </div>
                     </div>
@@ -522,19 +525,21 @@
                     </a>
 
                     <div class="flex flex-col gap-2">
-                        <span class="text-sm text-gray-400">March 15, 2021</span>
+                        <span class=" text-gray-400 text-[1.2rem]">March 15, 2021</span>
 
                         <h2 class="text-xl font-bold text-gray-800">
-                            <a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">10
+                            <a href="#"
+                                class="transition duration-100 hover:text-indigo-500 active:text-indigo-600 text-[1.6rem]">10
                                 best smartphones for devs</a>
                         </h2>
 
-                        <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder
+                        <p class="text-gray-500 text-[1.5rem]">This is a section of some simple filler text, also known
+                            as placeholder
                             text.</p>
 
                         <div>
                             <a href="#"
-                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Read
+                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.5rem]">Read
                                 more</a>
                         </div>
                     </div>
@@ -550,19 +555,21 @@
                     </a>
 
                     <div class="flex flex-col gap-2">
-                        <span class="text-sm text-gray-400">January 27, 2021</span>
+                        <span class=" text-gray-400 text-[1.2rem]">January 27, 2021</span>
 
                         <h2 class="text-xl font-bold text-gray-800">
-                            <a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">8
+                            <a href="#"
+                                class="transition duration-100 hover:text-indigo-500 active:text-indigo-600 text-[1.6rem]">8
                                 High performance Notebooks</a>
                         </h2>
 
-                        <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder
+                        <p class="text-gray-500 text-[1.5rem]">This is a section of some simple filler text, also known
+                            as placeholder
                             text.</p>
 
                         <div>
                             <a href="#"
-                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Read
+                                class="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.5rem]">Read
                                 more</a>
                         </div>
                     </div>
@@ -575,7 +582,7 @@
     <!-- SECTION 6 END  -->
     <!-- section 7  -->
 
-    <!-- second -->
+
     <div class="">
         <input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
         <!-- content #2 -->
@@ -656,50 +663,54 @@
     </div>
     <!-- section 7 end -->
     <!-- slider 2  -->
-    <div class="parentOfSecSLiderAmdaHs1 bg-[#acdbff]">
-        <div class="djk-slider-container">
-            <button class="djk-slider-btn djk-prev">❮</button>
-            <div class="djk-slider">
-                <div class="djk-slide">
-                    <h2>OBESITY PACKAGE - BMD</h2>
-                    <p>The Obesity Health Package with Bone Mineral Density (BMD) assessment is a comprehensive suite of
-                        tests designed to evaluate and manage obesity-related health.</p>
-                    <span class="djk-price">NPR 27,566.00</span>
-                    <span class="djk-discounted-price">NPR 20,600.00</span>
+    <!-- excellence of us  -->
+    <div class="amdaFofoHsptlCOntainrMain w-full">
+        <h1 class="m-[0] text-[royalblue] text-center text-[3.2rem]">We Are Execellence In:</h1>
+        <div class="amdahsptl-fofo-slider-container">
+            <button class="amdahsptl-fofo-nav-btn amdahsptl-fofo-prev"><i class="ri-arrow-left-s-line"></i></button>
+            <div class="amdahsptl-fofo-slider-wrapper" id="amdahsptl-fofo-slider">
+                <div class="amdahsptl-fofo-slide">
+                    <div class="amdahsptl-fofo-card">
+                        <img src="https://media.istockphoto.com/id/1024123104/vector/dentist-woman-examining-patient-man-teeth-looking-inside-mouth-holding-instruments-flat.jpg?s=612x612&w=0&k=20&c=Tke0CYPsX20fVXVSx_JMdaVxaM6gIdIqkZKDLogLtvo="
+                            alt="Colorectal" />
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Expert care for intestinal health.</p>
+                    </div>
+                    <div class="amdahsptl-fofo-card">
+                        <img src="https://img.freepik.com/free-vector/surgeons-doing-surgery-concept-illustration_114360-17752.jpg"
+                            alt="Breast Care" />
+                        <h3>lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. lorem</p>
+                    </div>
+                    <div class="amdahsptl-fofo-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqPUQ7_8PK_riFghkEBlzxv1kMElHQpx91Q&s"
+                            alt="Dentistry" />
+                        <h3>Loren Lorem</h3>
+                        <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
                 </div>
-                <div class="djk-slide">
-                    <h2>COMPREHENSIVE HEALTH PACKAGE</h2>
-                    <p>Comprehensive Health Package helps in the overall assessment of all the organs in the body such
-                        as
-                        heart, kidney, lungs etc. for your well-being.</p>
-                    <span class="djk-price">NPR 18,106.00</span>
-                    <span class="djk-discounted-price">NPR 13,600.00</span>
-                </div>
-                <div class="djk-slide">
-                    <h2>STANDARD CARDIAC CHECKUP PACKAGE</h2>
-                    <p>The Standard Cardiac Checkup Package offers a thorough evaluation of cardiovascular health and
-                        related systems. This package includes essential blood tests.</p>
-                    <span class="djk-price">NPR 11,660.00</span>
-                    <span class="djk-discounted-price">NPR 8,700.00</span>
-                </div>
-                <!-- Duplicate slides for infinite loop effect -->
-                <div class="djk-slide">
-                    <h2>OBESITY PACKAGE - BMD</h2>
-                    <p>The Obesity Health Package with Bone Mineral Density (BMD) assessment is a comprehensive suite of
-                        tests designed to evaluate and manage obesity-related health.</p>
-                    <span class="djk-price">NPR 27,566.00</span>
-                    <span class="djk-discounted-price">NPR 20,600.00</span>
-                </div>
-                <div class="djk-slide">
-                    <h2>COMPREHENSIVE HEALTH PACKAGE</h2>
-                    <p>Comprehensive Health Package helps in the overall assessment of all the organs in the body such
-                        as
-                        heart, kidney, lungs etc. for your well-being.</p>
-                    <span class="djk-price">NPR 18,106.00</span>
-                    <span class="djk-discounted-price">NPR 13,600.00</span>
+                <div class="amdahsptl-fofo-slide">
+                    <div class="amdahsptl-fofo-card">
+                        <img src="https://media.istockphoto.com/id/1423372814/vector/traumatology-examines-and-bandages-childs-broken-leg-treatment-in-hospital.jpg?s=612x612&w=0&k=20&c=FZUUcVrwk5uWxqP0XmE0XsGrrfihhrjAC2-vaA9Y7F4="
+                            alt="ENT" />
+                        <h3>lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="amdahsptl-fofo-card">
+                        <img src="https://media.istockphoto.com/id/1024123104/vector/dentist-woman-examining-patient-man-teeth-looking-inside-mouth-holding-instruments-flat.jpg?s=612x612&w=0&k=20&c=Tke0CYPsX20fVXVSx_JMdaVxaM6gIdIqkZKDLogLtvo="
+                            alt="Gastro" />
+                        <h3>lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur dsds .</p>
+                    </div>
+                    <div class="amdahsptl-fofo-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqPUQ7_8PK_riFghkEBlzxv1kMElHQpx91Q&s"
+                            alt="Neuro" />
+                        <h3>lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. sfss</p>
+                    </div>
                 </div>
             </div>
-            <button class="djk-slider-btn djk-next">❯</button>
+            <button class="amdahsptl-fofo-nav-btn amdahsptl-fofo-next"><i class="ri-arrow-right-s-line"></i></button>
         </div>
     </div>
     <!-- slider 2 end -->
@@ -709,10 +720,10 @@
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
             <!-- text - start -->
             <div class="mb-10 md:mb-16">
-                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Why Choose AMDA
+                <h2 class="mb-4 text-center text-[1.9rem] font-bold text-gray-800 md:mb-6 lg:text-3xl">Why Choose AMDA
                     Hospital over other </h2>
 
-                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Lorem ipsum dolor sit amet
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 text-[1.6rem]">Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Quis unde iure earum similique dicta officia quas cumque nostrum ab
                     nihil?</p>
             </div>
@@ -720,7 +731,7 @@
 
             <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
                 <!-- feature - start -->
-                <div class="flex gap-4 md:gap-6">
+                <div class="flex gap-4 md:gap-6 animate-on-scroll" data-animate="scale-in-center">
                     <div
                         class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -731,17 +742,18 @@
                     </div>
 
                     <div>
-                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Growth</h3>
-                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                        <h3 class="mb-2 text-[1.6rem] font-semibold md:text-[1.8rem]">Growth</h3>
+                        <p class="mb-2 text-gray-500 text-[1.6rem]">Filler text is dummy text which has no meaning
+                            however looks very
                             similar to real text.</p>
                         <a href="#"
-                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.6rem]">More</a>
                     </div>
                 </div>
                 <!-- feature - end -->
 
                 <!-- feature - start -->
-                <div class="flex gap-4 md:gap-6">
+                <div class="flex gap-4 md:gap-6 animate-on-scroll" data-animate="scale-in-center">
                     <div
                         class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -752,17 +764,18 @@
                     </div>
 
                     <div>
-                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Security</h3>
-                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                        <h3 class="mb-2 text-[1.6rem] font-semibold md:text-[1.8rem]">Security</h3>
+                        <p class="mb-2 text-gray-500 text-[1.6rem]">Filler text is dummy text which has no meaning
+                            however looks very
                             similar to real text.</p>
                         <a href="#"
-                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.6rem]">More</a>
                     </div>
                 </div>
                 <!-- feature - end -->
 
                 <!-- feature - start -->
-                <div class="flex gap-4 md:gap-6">
+                <div class="flex gap-4 md:gap-6 animate-on-scroll" data-animate="scale-in-center">
                     <div
                         class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -773,17 +786,18 @@
                     </div>
 
                     <div>
-                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Cloud</h3>
-                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                        <h3 class="mb-2 text-[1.6rem] font-semibold md:text-[1.8rem]">Cloud</h3>
+                        <p class="mb-2 text-gray-500 text-[1.6rem]">Filler text is dummy text which has no meaning
+                            however looks very
                             similar to real text.</p>
                         <a href="#"
-                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.6rem]">More</a>
                     </div>
                 </div>
                 <!-- feature - end -->
 
                 <!-- feature - start -->
-                <div class="flex gap-4 md:gap-6">
+                <div class="flex gap-4 md:gap-6 animate-on-scroll" data-animate="scale-in-center">
                     <div
                         class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -794,17 +808,18 @@
                     </div>
 
                     <div>
-                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Speed</h3>
-                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                        <h3 class="mb-2 text-[1.6rem] font-semibold md:text-[1.8rem]">Speed</h3>
+                        <p class="mb-2 text-gray-500 text-[1.6rem]">Filler text is dummy text which has no meaning
+                            however looks very
                             similar to real text.</p>
                         <a href="#"
-                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.6rem]">More</a>
                     </div>
                 </div>
                 <!-- feature - end -->
 
                 <!-- feature - start -->
-                <div class="flex gap-4 md:gap-6">
+                <div class="flex gap-4 md:gap-6 animate-on-scroll" data-animate="scale-in-center">
                     <div
                         class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -815,17 +830,18 @@
                     </div>
 
                     <div>
-                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Support</h3>
-                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                        <h3 class="mb-2 text-[1.6rem] font-semibold md:text-[1.8rem]">Support</h3>
+                        <p class="mb-2 text-gray-500 text-[1.6rem]">Filler text is dummy text which has no meaning
+                            however looks very
                             similar to real text.</p>
                         <a href="#"
-                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.6rem]">More</a>
                     </div>
                 </div>
                 <!-- feature - end -->
 
                 <!-- feature - start -->
-                <div class="flex gap-4 md:gap-6">
+                <div class="flex gap-4 md:gap-6 animate-on-scroll" data-animate="scale-in-center">
                     <div
                         class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -836,11 +852,12 @@
                     </div>
 
                     <div>
-                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Dark Mode</h3>
-                        <p class="mb-2 text-gray-500">Filler text is dummy text which has no meaning however looks very
+                        <h3 class="mb-2 text-[1.6rem] font-semibold md:text-[1.8rem]">Dark Mode</h3>
+                        <p class="mb-2 text-gray-500 text-[1.6rem]">Filler text is dummy text which has no meaning
+                            however looks very
                             similar to real text.</p>
                         <a href="#"
-                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                            class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700 text-[1.6rem]">More</a>
                     </div>
                 </div>
                 <!-- feature - end -->
@@ -850,15 +867,16 @@
     <!-- section 8edn -->
 
     <!-- FAQ  -->
-    <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="bg-[#e9edff] py-6 sm:py-8 lg:py-12">
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
             <!-- text - start -->
             <div class="mb-10 md:mb-16">
-                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl faq-question">
+                <h2 class="mb-4 text-center text-[1.7rem] font-bold text-gray-800 md:mb-6 lg:text-3xl faq-question">
                     Frequently asked
                     questions</h2>
 
-                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 text-[1.6rem]">This is a section of some
+                    simple
                     filler text, also known as placeholder text. It shares some characteristics of a real written text
                     but is random or otherwise generated.</p>
             </div>
@@ -869,7 +887,8 @@
                 <div class="border-b">
                     <div
                         class="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-indigo-500 active:text-indigo-600">
-                        <span class="font-semibold transition duration-100 md:text-lg">How does the product work?</span>
+                        <span class="font-semibold transition duration-100 text-[1.5rem]">How does the product
+                            work?</span>
 
                         <span class="text-indigo-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -891,7 +910,7 @@
                 <div class="border-b">
                     <div
                         class="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-indigo-500 active:text-indigo-600">
-                        <span class="font-semibold transition duration-100 md:text-lg">What are the features?</span>
+                        <span class="font-semibold transition duration-100 text-[1.5rem]">What are the features?</span>
 
                         <span class="text-indigo-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -913,7 +932,8 @@
                 <div class="border-b">
                     <div
                         class="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-indigo-500 active:text-indigo-600">
-                        <span class="font-semibold transition duration-100 md:text-lg">What about integrations?</span>
+                        <span class="font-semibold transition duration-100 text-[1.5rem]">What about
+                            integrations?</span>
 
                         <span class="text-indigo-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -935,7 +955,7 @@
                 <div class="border-b">
                     <div
                         class="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-indigo-500 active:text-indigo-600">
-                        <span class="font-semibold transition duration-100 md:text-lg">Is support available?</span>
+                        <span class="font-semibold transition duration-100 text-[1.5rem]">Is support available?</span>
 
                         <span class="rotate-180 text-indigo-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -946,7 +966,8 @@
                         </span>
                     </div>
 
-                    <p class="mb-4 text-gray-500">This is a section of some simple filler text, also known as
+                    <p class="mb-4 text-gray-500 text-[1.5rem]">This is a section of some simple filler text, also known
+                        as
                         placeholder text. It shares some characteristics of a real written text but is random or
                         otherwise generated. It may be used to display a sample of fonts or generate text for testing.
                     </p>
